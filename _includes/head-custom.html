@@ -1,2 +1,7 @@
-<link rel="icon" type="image/png" href="{{ "/assets/favicon.png" | relative_url }}">
-<link rel="apple-touch-icon" href="{{ "/assets/logo.png" | relative_url }}">
+{% if page.url contains '/binomial/' %}
+<link rel="icon" type="image/png" href="{{ '/assets/binomial-favicon.png' | relative_url }}">
+<link rel="apple-touch-icon" href="{{ '/assets/binomial-logo.png' | relative_url }}">
+{% else %}
+<link rel="icon" type="image/png" href="{{ '/assets/favicon.png' | relative_url }}">
+<link rel="apple-touch-icon" href="{{ '/assets/logo.png' | relative_url }}">
+{% endif %}
